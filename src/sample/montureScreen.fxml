@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#drag2" onMousePressed="#drag1" prefHeight="479.0" prefWidth="888.0" style="-fx-background-color: #23B574;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MontureScreenController">
+   <children>
+      <Label fx:id="date" alignment="CENTER_RIGHT" layoutX="709.0" layoutY="455.0" prefHeight="18.0" prefWidth="167.0" text="DATE" />
+      <Button id="exit" fx:id="exit" alignment="CENTER" contentDisplay="CENTER" layoutX="828.0" layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#exit" prefHeight="26.0" prefWidth="59.0" style="-fx-background-radius: none;" stylesheets="@button.css" text="X">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="minimize" fx:id="minimize" alignment="CENTER" contentDisplay="CENTER" layoutX="768.0" layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#minimize" prefHeight="26.0" prefWidth="59.0" style="-fx-background-radius: none;" stylesheets="@button.css" text="-">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="105.0" fitWidth="107.0" layoutX="1.0" layoutY="1.0">
+         <image>
+            <Image url="@resources/logo.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="-37.0" layoutY="6.0" prefHeight="35.0" prefWidth="183.0" style="-fx-font-family: &quot;Roboto&quot;;" text="OPTITAXE">
+         <font>
+            <Font name="AIGDT" size="18.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="21.0" layoutY="106.0" prefHeight="338.0" prefWidth="806.0" stylesheets="@scrollpane.css">
+         <content>
+            <TableView id="mytable" fx:id="montures" prefHeight="460.0" prefWidth="806.0" stylesheets="@tableview.css">
+               <columns>
+                  <TableColumn fx:id="idCol" maxWidth="99.0" prefWidth="60.0" sortable="false" text="ID" />
+                  <TableColumn fx:id="marqueCol" maxWidth="106.40002059936523" prefWidth="91.0" sortable="false" text="Marque" />
+                  <TableColumn fx:id="couleurCol" maxWidth="95.20002746582031" prefWidth="91.0" sortable="false" text="Couleur" />
+                  <TableColumn fx:id="formeCol" maxWidth="232.0000762939453" prefWidth="91.0" sortable="false" text="Forme" />
+                  <TableColumn fx:id="matiereCol" maxWidth="276.0" minWidth="0.0" prefWidth="91.0" sortable="false" text="Matiere" />
+                  <TableColumn fx:id="enfantCol" maxWidth="158.4000244140625" prefWidth="91.0" sortable="false" text="Enfant" />
+                  <TableColumn fx:id="unisexeCol" maxWidth="113.60003662109375" prefWidth="91.0" sortable="false" text="Unisexe" />
+                  <TableColumn fx:id="solaireCol" maxWidth="113.60003662109375" prefWidth="91.0" sortable="false" text="Solaire" />
+                  <TableColumn fx:id="prixCol" maxWidth="113.60003662109375" prefWidth="91.0" sortable="false" text="Prix" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Label alignment="CENTER" layoutX="268.0" layoutY="18.0" prefHeight="71.0" prefWidth="286.0" text="Montures" underline="true">
+         <font>
+            <Font name="Bauhaus 93" size="36.0" />
+         </font>
+      </Label>
+      <Button id="client" layoutX="616.0" layoutY="24.0" mnemonicParsing="false" onAction="#refreshTable" prefHeight="50.0" prefWidth="50.0" stylesheets="@button.css">
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="45.0" onMouseClicked="#refreshTable">
+               <image>
+                  <Image url="@refresh.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="client" layoutX="124.0" layoutY="27.0" mnemonicParsing="false" onAction="#retourner" prefHeight="50.0" prefWidth="50.0" stylesheets="@button.css">
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="45.0">
+               <image>
+                  <Image url="@return.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="client" layoutX="686.0" layoutY="24.0" mnemonicParsing="false" onAction="#openAddMontureScreen" prefHeight="50.0" prefWidth="50.0" stylesheets="@button.css">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0">
+               <image>
+                  <Image url="@addMontures.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="client" fx:id="delete" layoutX="762.0" layoutY="27.0" mnemonicParsing="false" onAction="#deleteMonture" stylesheets="@button.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="45.0">
+               <image>
+                  <Image url="@delete.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button id="client" layoutX="542.0" layoutY="21.0" mnemonicParsing="false" onAction="#updateMonture" prefHeight="50.0" prefWidth="50.0" stylesheets="@button.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="45.0">
+               <image>
+                  <Image url="@Edit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

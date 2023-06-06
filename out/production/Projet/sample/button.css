@@ -1,0 +1,55 @@
+#button{
+               -fx-background-color :  #C8C2B2;
+               -fx-text-fill : black;
+               -fx-padding: 0 0 0 0;
+               -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+               -fx-background-radius: 4;
+               -fx-font-weight: bold;	  
+               -fx-font-size: 14;	 
+               -fx-background-radius : 10;
+               -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+               
+	
+	
+               }
+#button:hover{
+                             -fx-background-color : #E887B2;
+                            }
+#button: pressed{
+-fx-padding: 2 7 5 7;
+-fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+#exit {
+-fx-background-color : transparent;
+-fx-text-fill : black;
+-fx-font-weight : bold;
+}
+#exit:hover{
+-fx-background-color : #E81123;
+}
+
+#minimize {
+-fx-background-color : transparent;
+-fx-text-fill : black;
+-fx-font-weight : bold;
+}
+#minimize:hover {
+-fx-background-color : #C7CACF;
+}
+
+#client{
+	-fx-background-color: transparent;
+
+}
+#client:hover{
+	-fx-border-color: #000000;
+
+}
+
+#client:pressed{
+	-fx-background-color:  #C8C2B2;
+	-fx-padding: 2 7 5 7;
+	-fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}	
+}

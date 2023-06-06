@@ -1,0 +1,17 @@
+#exit{		
+	-fx-background-color: transparent;
+	-fx-font-weight: bold;
+}
+#exit:hover{
+		-fx-background-color: red;
+		
+}
+
+#minimize{		
+	-fx-background-color: transparent;
+	-fx-font-weight: bold;
+}
+#minimize:hover{
+		-fx-background-color: gray;
+		
+}

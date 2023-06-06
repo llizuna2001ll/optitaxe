@@ -1,0 +1,13 @@
+.textfield{
+	-fx-background-color :  #C8C2B2;
+	-fx-border-radius : 10;
+	-fx-background-radius : 10;
+	-fx-border-color : none;
+	-fx-prompt-text-fill :  #58595A;
+}
+
+.textfield: focused{
+	-fx-background-color :  #C8C2B2;
+	-fx-border-color : black;
+	
+}

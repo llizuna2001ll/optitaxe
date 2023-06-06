@@ -1,0 +1,7 @@
+.hyperlink {
+	-fx-text-fill: black;
+}
+
+.hyperlink: visited{
+	-fx-text-fill: #235502;
+}

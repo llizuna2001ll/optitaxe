@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#drag2" onMousePressed="#drag1" prefHeight="624.0" prefWidth="437.0" style="-fx-background-color: #21AC6F; -fx-border-color: #000000;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UpdateCustomerScreenController">
+   <children>
+      <ImageView fitHeight="105.0" fitWidth="107.0">
+         <image>
+            <Image url="@resources/logo.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="-38.0" layoutY="5.0" prefHeight="35.0" prefWidth="183.0" style="-fx-font-family: &quot;Roboto&quot;;" text="OPTITAXE">
+         <font>
+            <Font name="AIGDT" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="107.0" layoutY="4.0" prefHeight="71.0" prefWidth="286.0" text="Modifier Client" underline="true">
+         <font>
+            <Font name="Bauhaus 93" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nom" layoutX="79.0" layoutY="105.0" prefHeight="26.0" prefWidth="131.0" styleClass="textfield" stylesheets="@textfield.css" />
+      <Label layoutX="25.0" layoutY="110.0" text="Nom" />
+      <TextField fx:id="prenom" layoutX="284.0" layoutY="105.0" prefHeight="26.0" prefWidth="131.0" styleClass="textfield" stylesheets="@textfield.css" />
+      <Label layoutX="232.0" layoutY="110.0" text="Prenom" />
+      <TextField fx:id="email" layoutX="77.0" layoutY="168.0" prefHeight="26.0" prefWidth="131.0" styleClass="textfield" stylesheets="@textfield.css" />
+      <Label layoutX="22.0" layoutY="172.0" text="Email" />
+      <TextField fx:id="address" layoutX="286.0" layoutY="168.0" prefHeight="26.0" prefWidth="131.0" styleClass="textfield" stylesheets="@textfield.css" />
+      <Label layoutX="234.0" layoutY="172.0" text="adress" />
+      <Button id="button" fx:id="modifier" alignment="CENTER" blendMode="SRC_ATOP" contentDisplay="CENTER" layoutX="21.0" layoutY="565.0" mnemonicParsing="false" onAction="#update" prefHeight="35.0" prefWidth="96.0" stylesheets="@button.css" text="UPDATE">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <SepiaTone level="0.32" />
+         </effect>
+      </Button>
+      <Button id="button" fx:id="Cancel" alignment="CENTER" blendMode="SRC_ATOP" contentDisplay="CENTER" layoutX="315.0" layoutY="565.0" mnemonicParsing="false" onAction="#Cancel" prefHeight="35.0" prefWidth="96.0" style="-fx-background-color: #373D4D;" stylesheets="@button.css" text="QUITTER">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <SepiaTone level="0.32" />
+         </effect>
+      </Button>
+      <Label fx:id="addingLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="29.0" layoutY="534.0" prefHeight="20.0" prefWidth="379.0" textFill="#ea0505" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="telephone" layoutX="77.0" layoutY="227.0" prefHeight="26.0" prefWidth="131.0" styleClass="textfield" stylesheets="@textfield.css" />
+      <Label layoutX="16.0" layoutY="231.0" text="telephone" />
+      <TextField fx:id="medcin" layoutX="290.0" layoutY="227.0" prefHeight="26.0" prefWidth="131.0" styleClass="textfield" stylesheets="@textfield.css" />
+      <Label layoutX="238.0" layoutY="231.0" text="Médcin" />
+      <Button id="button" fx:id="clear" alignment="CENTER" blendMode="SRC_ATOP" contentDisplay="CENTER" layoutX="166.0" layoutY="565.0" mnemonicParsing="false" onAction="#clear" prefHeight="35.0" prefWidth="96.0" style="-fx-background-color: #797D88;" stylesheets="@button.css" text="CLEAR">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <SepiaTone level="0.32" />
+         </effect>
+      </Button>
+      <Label layoutX="30.0" layoutY="298.0" text="OD :" />
+      <TextField fx:id="sphDroit" layoutX="111.0" layoutY="292.0" prefHeight="26.0" prefWidth="42.0" styleClass="textfield" stylesheets="@textfield.css" />
+      <Label layoutX="79.0" layoutY="297.0" text="sph" />
+      <TextField fx:id="sphGauche" layoutX="110.0" layoutY="342.0" prefHeight="26.0" prefWidth="42.0" styleClass="textfield" stylesheets="@textfield.css" />
+      <Label layoutX="79.0" layoutY="346.0" text="sph" />
+      <TextField fx:id="cylDroit" layoutX="217.0" layoutY="292.0" prefHeight="26.0" prefWidth="42.0" styleClass="textfield" stylesheets="@textfield.css" />
+      <Label layoutX="182.0" layoutY="298.0" text="cyl" />
+      <TextField fx:id="cylGauche" layoutX="215.0" layoutY="342.0" prefHeight="26.0" prefWidth="42.0" styleClass="textfield" stylesheets="@textfield.css" />
+      <Label layoutX="182.0" layoutY="346.0" text="cyl" />
+      <TextField fx:id="axeDroit" layoutX="327.0" layoutY="293.0" prefHeight="26.0" prefWidth="42.0" styleClass="textfield" stylesheets="@textfield.css" />
+      <Label layoutX="291.0" layoutY="298.0" text="axe" />
+      <TextField fx:id="axeGauche" layoutX="327.0" layoutY="342.0" prefHeight="26.0" prefWidth="42.0" styleClass="textfield" stylesheets="@textfield.css" />
+      <Label layoutX="290.0" layoutY="346.0" text="axe" />
+      <TextField fx:id="verre" layoutX="328.0" layoutY="401.0" prefHeight="26.0" prefWidth="96.0" styleClass="textfield" stylesheets="@textfield.css" />
+      <Label layoutX="273.0" layoutY="405.0" text="Verre" />
+      <ChoiceBox fx:id="mutuelle" layoutX="172.0" layoutY="480.0" prefWidth="150.0" stylesheets="@choicebox.css" />
+      <Label layoutX="107.0" layoutY="484.0" text="Mutuelle" />
+      <TextField fx:id="add" layoutX="78.0" layoutY="401.0" prefHeight="26.0" prefWidth="54.0" styleClass="textfield" stylesheets="@textfield.css" />
+      <Label layoutX="26.0" layoutY="405.0" text="ADD" />
+      <Label layoutX="27.0" layoutY="346.0" text="OG :" />
+   </children>
+</AnchorPane>

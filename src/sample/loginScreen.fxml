@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#drag2" onMousePressed="#drag1" prefHeight="477.0" prefWidth="888.0" style="-fx-background-color: #C8C2B2;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.loginScreenController">
+   <children>
+      <AnchorPane layoutX="-22.0" prefHeight="477.0" prefWidth="430.0" style="-fx-background-color: #23B574;">
+         <children>
+            <Button id="button" fx:id="signup" blendMode="SRC_ATOP" layoutX="137.0" layoutY="268.0" mnemonicParsing="false" onAction="#openSignUp" prefHeight="34.0" prefWidth="144.0" stylesheets="@button.css" text="Sign up">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <SepiaTone level="0.32" />
+               </effect>
+               <styleClass>
+                  <String fx:value="record-sales" />
+                  <String fx:value="button" />
+               </styleClass>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="65.0" layoutY="117.0" prefHeight="66.0" prefWidth="318.0" style="-fx-font-family: &quot;rOBOTO&quot;;" text="Pas encore inscrit ? ">
+               <font>
+                  <Font name="AIGDT" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="80.0" layoutY="199.0" text="Creer votre compte OPTITAXE gratuitement">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Button id="exit" fx:id="exit" alignment="CENTER" contentDisplay="CENTER" layoutX="829.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#exit" prefHeight="26.0" prefWidth="59.0" style="-fx-background-radius: none;" stylesheets="@button.css" text="X">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <AnchorPane layoutX="488.0" layoutY="41.0" prefHeight="411.0" prefWidth="374.0" style="-fx-background-color: #23B574;">
+         <children>
+            <TextField fx:id="signInUsername" layoutX="99.0" layoutY="180.0" prefHeight="26.0" prefWidth="199.0" promptText="Username" styleClass="textfield" stylesheets="@textfield.css" />
+            <PasswordField fx:id="signInPassword" layoutX="98.0" layoutY="244.0" prefHeight="26.0" prefWidth="199.0" promptText="Password" styleClass="textfield" stylesheets="@textfield.css" />
+            <Button id="button" fx:id="signIn" cache="true" layoutX="139.0" layoutY="303.0" mnemonicParsing="false" onAction="#signIn" prefHeight="40.0" prefWidth="118.0" stylesheets="@button.css" text="Sign In">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <ImageView fitHeight="80.0" fitWidth="86.0" layoutX="33.0" layoutY="153.0">
+               <image>
+                  <Image url="@resources/unnamed.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="64.0" fitWidth="59.0" layoutX="46.0" layoutY="225.0">
+               <image>
+                  <Image url="@resources/lock-login-key-password-protected-safe-security-icon-38-B1.png" />
+               </image>
+            </ImageView>
+            <Hyperlink layoutX="98.0" layoutY="271.0" stylesheets="@hyperlink.css" text="Mot de passe oublié ?" underline="true" />
+            <ImageView fitHeight="211.0" fitWidth="215.0" layoutX="83.0" layoutY="14.0">
+               <image>
+                  <Image url="@resources/logo.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="99.0" layoutY="28.0" prefHeight="35.0" prefWidth="183.0" style="-fx-font-family: &quot;Roboto&quot;;" text="OPTITAXE">
+               <font>
+                  <Font name="AIGDT" size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="warningLabel" alignment="CENTER" contentDisplay="CENTER" layoutY="349.0" prefHeight="20.0" prefWidth="379.0" textFill="#ea0505" underline="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="1.0" />
+         </padding>
+      </AnchorPane>
+      <Button id="minimize" fx:id="minimize" alignment="CENTER" contentDisplay="CENTER" layoutX="769.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#minimize" prefHeight="26.0" prefWidth="59.0" style="-fx-background-radius: none;" stylesheets="@button.css" text="-">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

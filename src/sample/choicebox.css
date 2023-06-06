@@ -1,0 +1,16 @@
+.choice-box { 
+
+	-fx-background-color:   #C8C2B2; 
+	-fx-mark-color: black;
+}
+
+.choice-box .context-menu { 
+
+	-fx-background-color:  #C8C2B2; 
+	-fx-border-color : black;
+	
+
+}
+
+
+
